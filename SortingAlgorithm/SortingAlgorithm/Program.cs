@@ -27,6 +27,8 @@ namespace SortingAlgorithm
             //DisplayElements(numbers);
 
             #endregion
+
+            #region studentList
             List<Student> stList = new List<Student>()
             {
                 new Student("Kabelo", "Smith",21),
@@ -36,7 +38,6 @@ namespace SortingAlgorithm
                 new Student("Rogger", "Federer",18)
             };
 
-            
             Console.WriteLine("Student data\n");
             foreach (Student st in stList)
             {
@@ -48,6 +49,17 @@ namespace SortingAlgorithm
             {
                 Console.WriteLine(st.ToString());
             }
+
+            #endregion
+
+            List<string> names = new List<string>()
+            {"Kabelo","Jason","Anthony","Carol","Bennet"
+            };
+
+            /*Using any sorting algorithm, create a method
+             * that will sort the list of names in 
+             * ascending order*/
+
             Console.Read();
         }
 
