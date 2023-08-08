@@ -8,23 +8,23 @@ namespace SortingAlgorithm
         {
 
             #region RandonArray
-            List<int> numbers = new List<int>();
+            //List<int> numbers = new List<int>();
 
-            //1 - 500
-            Random rnd = new Random();
-            for (int i = 1; i <= 999999; i++)
-            {
-                numbers.Add(rnd.Next(1, 10000)); 
-            }
+            ////1 - 500
+            //Random rnd = new Random();
+            //for (int i = 1; i <= 999999; i++)
+            //{
+            //    numbers.Add(rnd.Next(1, 10000)); 
+            //}
 
-            Console.WriteLine("+++++Before Sort+++++");
-            //DisplayElements(numbers);
-            BubbleSort(numbers);
-            SelectionSort(numbers);
-            InsertionSort(numbers);
+            //Console.WriteLine("+++++Before Sort+++++");
+            ////DisplayElements(numbers);
+            //BubbleSort(numbers);
+            //SelectionSort(numbers);
+            //InsertionSort(numbers);
 
-            Console.WriteLine("\n+++++After Sort+++++");
-            //DisplayElements(numbers);
+            //Console.WriteLine("\n+++++After Sort+++++");
+            ////DisplayElements(numbers);
 
             #endregion
 
@@ -51,16 +51,37 @@ namespace SortingAlgorithm
             }
 
             #endregion
-
+            Console.WriteLine("\n===========================\n");
             List<string> names = new List<string>()
             {"Kabelo","Jason","Anthony","Carol","Bennet"
             };
-
             /*Using any sorting algorithm, create a method
-             * that will sort the list of names in 
-             * ascending order*/
+            * that will sort the list of names in 
+            * ascending order*/
+            Console.WriteLine("=====Before the Sort");
+            DisplayElements(names);
+            BubbleSort(names);
+            Console.WriteLine("\n=====After the Sort");
+            DisplayElements(names);
+           
 
             Console.Read();
+        }
+
+        private static void BubbleSort(List<string> names)
+        {
+            for (int i = 0; i < names.Count - 1; i++)
+            {
+                for (int x = (i + 1); x < names.Count; x++)
+                {
+                    if (string.Compare(names[x], names[i]) < 0)
+                    {
+                        string temp = names[x];
+                        names[x] = names[i];
+                        names[i] = temp;
+                    }
+                }
+            }
         }
 
         private static void InsertionSort(List<int> ar)
@@ -110,13 +131,21 @@ namespace SortingAlgorithm
         {
             for (int i = 0; i < stList.Count - 1; i++)
             {
-                for (int j = (i + 1); j < stList.Count; j++)
+                for (int x = (i + 1); x < stList.Count; x++)
                 {
-                    if (stList[i].Age > stList[j].Age )
+                    if (string.Compare(stList[i].Lastname, stList[x].Lastname) > 0)
                     {
                         Student temp = stList[i];
-                        stList[i] = stList[j];
-                        stList[j] = temp;
+                        stList[i] = stList[x];
+                        stList[x] = temp;
+                    }else if (string.Compare(stList[i].Lastname, stList[x].Lastname) == 0)
+                    {
+                        if (string.Compare(stList[i].Firstname, stList[x].Firstname) > 0)
+                        {
+                            Student temp = stList[i];
+                            stList[i] = stList[x];
+                            stList[x] = temp;
+                        }
                     }
                 }
             }
@@ -150,6 +179,14 @@ namespace SortingAlgorithm
             foreach (int num in numbers)
             {
                 Console.Write(num + " ");
+            }
+
+        }
+        private static void DisplayElements(List<string> names)
+        {
+            foreach (string str in names)
+            {
+                Console.Write(str + " ");
             }
 
         }
