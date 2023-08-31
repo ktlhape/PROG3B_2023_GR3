@@ -1,0 +1,15 @@
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\bin\Debug\net7.0\VirtualMethods.exe
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\bin\Debug\net7.0\VirtualMethods.deps.json
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\bin\Debug\net7.0\VirtualMethods.runtimeconfig.json
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\bin\Debug\net7.0\VirtualMethods.dll
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\bin\Debug\net7.0\VirtualMethods.pdb
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.csproj.AssemblyReference.cache
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.GeneratedMSBuildEditorConfig.editorconfig
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.AssemblyInfoInputs.cache
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.AssemblyInfo.cs
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.csproj.CoreCompileInputs.cache
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.dll
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\refint\VirtualMethods.dll
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.pdb
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\VirtualMethods.genruntimeconfig.cache
+D:\VC\PROG7312\GR3\VirtualMethods\VirtualMethods\obj\Debug\net7.0\ref\VirtualMethods.dll
