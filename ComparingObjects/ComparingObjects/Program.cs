@@ -52,7 +52,6 @@ namespace ComparingObjects
             }
         }
     }
-
     public class Employee :IComparable<Employee>
     {
         public string? Firstname { get; set; }
