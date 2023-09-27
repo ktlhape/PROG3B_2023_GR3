@@ -8,6 +8,8 @@ namespace UsingQueues.MultipleAdvisors
 {
     public class Tester
     {
+        static string[] names = { "David", "Mike", "Jason", "Kabelo", "Michael", "Rachael", "Donna", "Henry", "Lesego", "Thabiso" };
+        static string[] lastnames = { "Smith", "Stevens", "Barron", "Mokoena", "Pearson", "Ross", "Paulsen" };
         static void Main(string[] args)
         {
             InterviewCenter center = new();
@@ -30,13 +32,14 @@ namespace UsingQueues.MultipleAdvisors
 
                 if (interview != null)
                 {
-                    Log($"Interview # {interview.Id} with {interview.StudentId} is attended by {interview.Advisor}.");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Thread.Sleep(rdn.Next(3000,6000));
+                    Console.ForegroundColor = color;
+                    Log($"Interview # {interview.Id} with {interview.Student.ToString()} is attended by {interview.Advisor}.");
+
+                    Thread.Sleep(rdn.Next(5000,8000));
                     center.End(interview);
 
                     Console.ForegroundColor = color;
-                    Log($"Interview # {interview.Id} with {interview.StudentId} is ended by {interview.Advisor}");
+                    Log($"Interview # {interview.Id} with {interview.Student.ToString()} is ended by {interview.Advisor}");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Thread.Sleep(rdn.Next(2000, 4000));
                 }
@@ -52,10 +55,13 @@ namespace UsingQueues.MultipleAdvisors
             Random rdn = new Random();
             while (true)
             {
-                int stId = rdn.Next(10000, 80000);
-                int waitingCount = center.Interview(stId);
-                Log($"Consultation with {stId}, waiting in queue : {waitingCount}");
-                Thread.Sleep(rdn.Next(5000, 10000));
+                int stId = rdn.Next(10000, 89999);
+                string name = names[rdn.Next(0, names.Length - 1)];
+                string lastname = lastnames[rdn.Next(0, lastnames.Length - 1)];
+                Student st = new(stId, name, lastname);
+                int waitingCount = center.Interview(st);
+                Log($"Consultation with {st.ToString()}, waiting in queue : {waitingCount}");
+                Thread.Sleep(rdn.Next(4000, 6000));
             }
         }
         static void Log(string str)

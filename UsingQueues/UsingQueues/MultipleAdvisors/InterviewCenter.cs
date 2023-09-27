@@ -16,12 +16,12 @@ namespace UsingQueues.MultipleAdvisors
         {
             Interviews = new ConcurrentQueue<WalkInInterview>();
         }
-        public int Interview(int stId)
+        public int Interview(Student st)
         {
             WalkInInterview interview = new WalkInInterview()
             {
                 Id = ++_count,
-                StudentId = stId,
+                Student = st,
                 InterviewTime = DateTime.Now
             };
             Interviews.Enqueue(interview);
