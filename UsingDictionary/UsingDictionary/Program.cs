@@ -61,9 +61,10 @@
             //Display all the items
             Console.WriteLine("============All Items============");
             int count = 0;
+            char c = 'A';
             foreach (string mod in modules.Keys)
             {
-                Console.Write(mod); //C#
+                Console.Write($"{c++}. {mod}"); //C#
                 foreach (string st in modules[mod])
                 {
                     Console.WriteLine($"\t{++count}. {st}");
