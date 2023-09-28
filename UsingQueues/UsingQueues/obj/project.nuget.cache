@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5xhh7D74aV5H+cLnkUSMScMprfILOi8DbXRMNPAcp042p6T17IgTKHuKhPkFyXQ/UWkhesedQVNbGX/GYeo8rw==",
+  "dgSpecHash": "pz8VnaVjD5ndeTs9n5MDycz4K6ftSuxFwGGxov7tYzgK0R0azvGmlZCTQKnai71pjva2DxEN/jlgbvp5FTdKeQ==",
   "success": true,
   "projectFilePath": "D:\\VC\\PROG7312\\GR3\\UsingQueues\\UsingQueues\\UsingQueues.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kaykt\\.nuget\\packages\\optimizedpriorityqueue\\5.1.0\\optimizedpriorityqueue.5.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
