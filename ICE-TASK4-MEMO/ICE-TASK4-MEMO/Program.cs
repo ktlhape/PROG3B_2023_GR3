@@ -29,7 +29,7 @@ namespace ICE_TASK4_MEMO
         //South Africa
         static void FindParent(string child)
         {
-            Console.WriteLine($"{child.PadLeft(child.Length)}"); //South Africa
+            Console.WriteLine($"{child}"); //South Africa
             int index = places[child]; // -1
             if (index != -1 && index < places.Count)
             {
